@@ -1,15 +1,13 @@
-#### ویزای ایران
-اتباع تمام كشورهايي كه داراي گذرنامه معتبر (با اعتبار حداقل شش ماه) مي توانند پس از ارايه مدارك لازم و اخذ رواديد به ايران سفر نمايند. اتباع سابق ايران كه براساس قانون مدني ايران ترك تابعيت نموده‌اند مي‌توانند با ارایه سند ترك تابعيت از دولت جمهوري اسلامي ايران، پس از اخذ رواديد به ايران سفر نمايند.
+#### Obtenir Visa d'Iran
+Les ressortissants de tous les pays qui ont un passeport en cours de validité (minimum 6 mois) après presentant kes documents nécessaire et l'obtention Visa d'Iran peuvent voyager en Iran. Les anciens ressortissants d'Iran qu'ils ont quitté leurs citoyenneté d'après le droit civil d'Iran en presentant une attestation de ce dernier de la part de R.I. d'Iran, et après l'obtention Visa d'Iran peuvent voyager en Iran.
 
-#### رواديد جهانگردی
-كليه متقاضيان رواديد جهانگردي، اعم از كساني كه قصد بازديد از مناطق ديدني و يا آثار باستاني را داشته و يا افرادي كه به منظور زيارت اماكن مقدسه در شهرهاي مذهبي عازم جمهوري اسلامي ايران هستند، لازم است تا ویزای جهانگردی دریافت نمایند.
+#### Visa de Tourisme
+Les demandeurs de Visa touristique qui souhaitent visiter Iran quelque soit pour les monuments touristiques ou historiques ou qui veulent faire le pèlerinage des lieux saint situé dans les villes religieuses, sont invité à obtenir le Visa touristique.
 
-#### رواديد تجاری
-بازرگانان، كارشناسان و متخصصين فني كه براي مذاكرات تجاري، سرمایه گذاری و … قصد سفر به جمهوري اسلامي ايران را دارند در صورت ارايه دعوت‌نامه از طرف شركتها و موسسات تجاري در ایران، مي‌توانند تقاضاي رواديد ورود تجاري نمايند.
+#### Visa de Commerce
+Les commercants, les experts et les techniciens qui souhaite visiter Iran pour soit pour des négociations commercieux, invesstissment et etc. en presentant une invitation de la part des sociètes et les institus en Iran peuvent demander le Visa de Commerce.
 
-روادید تجاری بسته به موضوع سفر، می تواند یکبار و یا به صورت متعدد صادر گردد.
+Le Visa de commerce en dependant du sujet de voyage, peut être délivré une ou plusieurs fois.
 
-#### رواديد عبور (ترانزيت)
-رواديد عبور (ترانزيت) جهت افرادي صادر مي گردد كه قصد سفر به كشور ثالثي را از طريق عبور از خاك كشور جمهوري اسلامي ايران دارند. اين اشخاص مي‌توانند ظرف مدت كوتاهي به‌ صورت ترانزيت از ايران عبور نمايند.
-
-**_موسسه بهار مهاجران پارسی با تجربه ای چشمگیر در ارایه خدمات کنسولی از جمله دریافت روادید، همراهی مطمئن برای شما خواهد بود._**
+#### Visa de Transition
+Visa de transistion sera delivré aux personnes qui souhaitent voyager à un pays tiers en passant par les territoire R. I. d'Iran. Ces personnes peuvent passer par Iran en tant transition.

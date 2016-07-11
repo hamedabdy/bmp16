@@ -1,0 +1,1 @@
+Un groupe très riche dans l'expériences avec au moins 3 dizaines d'années d'expériences dans le domaine Consulaire et l'auteur de 10 livres "Best Seller" utilisés dans tous les Ambassades, Consulats, les bureaux national de Ministaire des Affaires Etrangères et ainsi par des personnes non professionnelles.
