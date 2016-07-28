@@ -1,2 +1,2 @@
 L'Intitut Bahar Mohajeran Parsi est fondé depuis 2005 en Iran avec le bureau principale localisé dans le capitale à Téhéran.
-L'Institut BMP en possedant des vastes expériences dans les domaines de services Consulaire dont l'obtention de Visa; serait votre assistance de confiance.
+L'Institut BMP en possedant des vastes expériences dans les domaines de services Consulaire dont l'obtention de Visa serait votre assistance de confiance.

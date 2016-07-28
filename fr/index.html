@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
 	<title>Institut BMP | Visa Iran</title>
-	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" href="../css/style.css">
+    <meta name="theme-color" content="#08509E" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-navbutton-color" content="#08509E" />
     <link rel="icon" href="../images/favicon/favicon32.png" sizes="32x32">
     <link rel="icon" href="../images/favicon/favicon192.png" sizes="192x192">
     <link rel="apple-touch-icon-precomposed" href="../images/favicon/favicon180.png">
@@ -22,9 +25,9 @@
             <li><a href="#home">Accueil</a></li>
             <li><a href="#sect1">A propos</a></li>
             <li><a href="#sect2">Visa Iran</a></li>
-            <li><a href="#sect3">Nos Services</a></li>
-            <li><a href="#sect4">Contact</a></li>
-            <li><a class="cur-lang" href="/fr/">Français</a>
+            <li><a href="#sect3">Services</a></li>
+            <li><a href="#sect5">Contact</a></li>
+            <li><a class="cur-lang">Français</a>
                 <ul class="header-lang">
                     <li><a href="/fa/">‍‍‍‌‌‌پارسی</a></li>
                     <li><a href="/">English</a></li>
@@ -49,13 +52,13 @@
         </section>
         <section id="sect3" class="">
             <aside>
-                <div class="heading"><h2>Nos Services<h2></div>
+                <div class="heading"><h2>Services<h2></div>
                 <article></article>
             </aside>
         </section>
         <section id="sect4" class="">
             <aside>
-                <div class="heading"><h2>Notre Equipe<h2></div>
+                <div class="heading"><h2>Equipe<h2></div>
                 <article></article>
             </aside>
         </section>
@@ -63,6 +66,14 @@
             <aside>
                 <div class="heading"><h2>Contact<h2></div>
                 <article></article>
+                <div class="contact-form">
+                    <form action="sendmail.php" method="POST" id="sendmailform">
+                        <input type="text" name="name" id="name" placeholder="Nom">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <button type="submit" id="submit">Envoyer</button>
+                    </form>
+                </div>
             </aside>
         </section>
     </div>
@@ -72,19 +83,15 @@
         <a href="#home">Accueil</a>
         <a href="#sect1">A propos</a>
         <a href="#sect2">Visa Iran</a>
-        <a href="#sect3">Nos Services</a>
-        <a href="#sect4">Notre Equipe</a>
+        <a href="#sect3">Services</a>
         <a href="#sect5">Contact</a>
     </nav>
     <div class="foot-logo">
     </div>
     <div class="copyright">Copyright 2015 BMP Institute. All rights reserved.</div>
 </footer>
-    <script src="../js/jquery-1.9.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- Markdown loader -->
     <script src="../js/marked.js"></script>
     <script src="../js/app.js"></script>
 </body>

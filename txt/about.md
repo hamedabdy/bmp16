@@ -1,2 +1,2 @@
-Bahar Mohajeran Parsi Institute has been established since 2005 in Iran with its head office in the capital city in Tehran. Experienced and expert employees & management will satisfy all your consular affair needs.
-BMP Institute will accompany you in your every Consular affair in the most comforting way.
+Bahar Mohajeran Parsi Institute has been established in Tehran - Iran since 2005. Experienced and expert employees & management will satisfy all your consular affair needs.
+BMP Institute will accompany you in your every Consular affairs in the most comforting way. It will make sure that you obtain your Visas rapidly, travel to Iran safely and most importantly optimizing your Visa optaining and displacement to the fewest.

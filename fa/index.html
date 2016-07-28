@@ -2,9 +2,12 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-	<title>موسسه بهار مهاجران پارسی | اخذ ویزای ایران</title>
-	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width" />
+	<title>موسسه بهار مهاجران پارسی | ویزای ایران</title>
     <link rel="stylesheet" href="../css/style.css">
+    <meta name="theme-color" content="#08509E" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-navbutton-color" content="#08509E" />
     <link rel="icon" href="../images/favicon/favicon32.png" sizes="32x32">
     <link rel="icon" href="../images/favicon/favicon192.png" sizes="192x192">
     <link rel="apple-touch-icon-precomposed" href="../images/favicon/favicon180.png">
@@ -23,10 +26,9 @@
             <li><a href="#sect1">درباره موسسه</a></li>
             <li><a href="#sect2">اخذ ویزای ایران</a></li>
             <li><a href="#sect3">خدمات</a></li>
-            <li><a href="#sect4">گروه مجرب</a></li>
             <li><a href="#sect5">تماس با ما</a></li>
             <li>
-                <a class="cur-lang" href="/fa/">‍‍‍‌‌‌پارسی</a>
+                <a class="cur-lang">‍‍‍‌‌‌پارسی</a>
                 <ul class="header-lang">
                     <li><a href="/">English</a></li>
                     <li><a href="/fr/">Français</a></li>
@@ -65,6 +67,15 @@
             <aside>
                 <div class="heading"><h2>تماس با ما<h2></div>
                 <article></article>
+                <div class="contact-form">
+                    <div id="alertmsg"></div>
+                    <form action="/sendmail.php" method="POST" id="sendmailform">
+                        <input type="text" name="name" id="name" placeholder="نام">
+                        <input type="email" name="email" id="email" placeholder="ایمیل">
+                        <textarea name="message" id="message" placeholder="پیام"></textarea>
+                        <button type="submit" id="submit">ارسال</button>
+                    </form>
+                </div>
             </aside>
         </section>
     </div>
@@ -75,18 +86,14 @@
         <a href="#sect1">درباره موسسه</a>
         <a href="#sect2">اخذ ویزای ایران</a>
         <a href="#sect3">خدمات</a>
-        <a href="#sect4">گروه مجرب</a>
         <a href="#sect5">تماس با ما</a>
     </nav>
     <div class="foot-logo">
     </div>
     <div class="copyright">Copyright 2016 BMP Institute. All rights reserved.</div>
 </footer>
-    <script src="../js/jquery-1.9.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- Markdown loader -->
     <script src="../js/marked.js"></script>
     <script src="../js/app.js"></script>
 </body>

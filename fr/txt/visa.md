@@ -1,5 +1,5 @@
 #### Obtenir Visa d'Iran
-Les ressortissants de tous les pays qui ont un passeport en cours de validité (minimum 6 mois) après presentant kes documents nécessaire et l'obtention Visa d'Iran peuvent voyager en Iran. Les anciens ressortissants d'Iran qu'ils ont quitté leurs citoyenneté d'après le droit civil d'Iran en presentant une attestation de ce dernier de la part de R.I. d'Iran, et après l'obtention Visa d'Iran peuvent voyager en Iran.
+Les ressortissants de tous les pays qui ont un passeport en cours de validité (minimum 6 mois) après presentant les documents nécessaire et l'obtention Visa d'Iran peuvent voyager en Iran. Les anciens ressortissants d'Iran qu'ils ont quitté leurs citoyenneté d'après le droit civil d'Iran en presentant une attestation de ce dernier de la part de R.I. d'Iran, et après l'obtention Visa d'Iran peuvent voyager en Iran.
 
 #### Visa de Tourisme
 Les demandeurs de Visa touristique qui souhaitent visiter Iran quelque soit pour les monuments touristiques ou historiques ou qui veulent faire le pèlerinage des lieux saint situé dans les villes religieuses, sont invité à obtenir le Visa touristique.
