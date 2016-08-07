@@ -157,7 +157,7 @@ ul {padding: 0; margin: 0; list-style-type: none; }
 .header-lang li:nth-child(2) > a::before { top: 97px; background-position: -114px -102px; }
 
 .imgSlider { overflow: hidden; }
-.mySlides img { width: 100%; height: calc(100vh - 70px); }
+.mySlides img { width: 100%; height: calc(100vh - 69px); }
 .animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
 @-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 .imgDesc {
