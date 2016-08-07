@@ -10,6 +10,23 @@ $('a[href^="#"]').on("click",function(){
     }
 });
 
+// Image Slider
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+
+// Load Markdowns from txt/
 $(document).ready(function(){
     $('#sect1 article').load('txt/about.md', function(data){
         $(this).html(marked(data));
@@ -28,7 +45,7 @@ $(document).ready(function(){
     });
 });
 
-
+// Display to top button upon scroll
 $(document).on('scroll', function() {
     var h = $(this).scrollTop();
     if(h == 0) {
@@ -39,6 +56,7 @@ $(document).on('scroll', function() {
     }
 });
 
+// AJAX contact from
 $( '#sendmailform' ).submit(function(e) {
     e.preventDefault();
     // $( '#submit:hover' ).css( 'cursor', 'wait' );
@@ -54,4 +72,15 @@ $( '#sendmailform' ).submit(function(e) {
         // $( '#submit:hover' ).css( 'cursor', 'pointer' );
         // $( '#submit' ).removeAttr( 'disabled' );
     });
+});
+
+// Share buttons window size
+$('.shareBtns').children('a').on('click', function(e){
+    e.preventDefault();
+    var e = 575,
+        f = 520,
+        g = (jQuery(window).width() - e) / 2,
+        h = (jQuery(window).height() - f) / 2,
+        i = "status=1,width=" + e + ",height=" + f + ",top=" + h + ",left=" + g;
+    window.open($(this).attr("href"), "Le Concert d'a Coté", i);
 });
