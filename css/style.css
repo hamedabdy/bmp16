@@ -283,7 +283,7 @@ main aside { margin: 50px 100px; }
 }
 .tooltip:hover .tooltiptext { visibility: visible; }
 
-.contact-form { float: right; width: 50%; }
+.contact-form { float: right; width: 50%; position: relative; }
 .contact-form::before {
     content: "";
     float: left;
@@ -297,7 +297,7 @@ main aside { margin: 50px 100px; }
     from { height: 100%; }
     to { height: 0; }
 }
-#alertmsg {
+.alertmsg {
     line-height: 14;
     color: #fff;
     font-family: sansation;

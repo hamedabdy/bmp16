@@ -59,12 +59,12 @@ $(document).on('scroll', function() {
 $( '#onlineVisaApplication' ).submit(function(e) {
     e.preventDefault();
     $.post( '/visa.php', $(this).serialize(), function(response) {
-        $( '#alertmsg' ).html( response );
-        $( '#alertmsg' ).addClass( 'hidealert' );
+        $( '#visaForm .alertmsg p' ).html( response );
+        $( '#visaForm .alertmsg' ).addClass( 'hidealert' );
         setTimeout(function (){
             $( '.hidealert' ).removeClass( 'hidealert' );
             $( '#sendmailform' )[0].reset();
-        }, 7300);
+        }, 7000);
     });
 });
 
@@ -72,12 +72,12 @@ $( '#onlineVisaApplication' ).submit(function(e) {
 $( '#sendmailform' ).submit(function(e) {
     e.preventDefault();
     $.post( "/sendmail.php", $(this).serialize(), function(response) {
-        $( '#alertmsg' ).html( response );
-        $( '#alertmsg' ).addClass( 'hidealert' );
+        $( '.contact-form .alertmsg p' ).html( response );
+        $( '.contact-form .alertmsg' ).addClass( 'hidealert' );
         setTimeout(function() {
             $( '.hidealert' ).removeClass( 'hidealert' );
             $( '#sendmailform' )[0].reset();
-        }, 7300);
+        }, 7000);
     });
 });
 
