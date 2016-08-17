@@ -63,8 +63,9 @@ Orange: FF6000;
     font-style: normal;
 }
 .flaticon-back:before { content: "\f102"; transform: rotate(-45deg); }
+.flaticon-chat-2:before { content: "\f107"; }
 
-body { font-family: sans-serif, Lato; margin: 0; }
+body { font-family: Lato, sans-serif; margin: 0; }
 nav { letter-spacing: 1px; font-weight: 100; font-size: 10pt; }
 a { text-decoration: none; color: #ffe; text-transform: uppercase; }
 a:hover { text-decoration: none; background: #ff6000; }
@@ -79,23 +80,50 @@ article { white-space: pre-wrap; font-size: 12pt; font-family: open-sans; text-a
 article ul { list-style-type: square; padding-left: 40px; }
 article li, article p { margin-top: -15px; }
 ul {padding: 0; margin: 0; list-style-type: none; }
+form {
+    color: #fff;
+    padding: 30px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    background-color: #002c52;
+}
+input, textarea, button {
+    border: 0;
+    padding: 15px;
+    font-size: 12pt;
+    letter-spacing: 2px;
+    font-family: sansation;
+}
+label { font-size: 12pt; font-family: sansation; }
+textarea { max-width: 100%; width: 100% }
+input[type=radio] {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+    background-color: #fff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+input[type="radio"]:checked { background-color: #ff6000; }
 
 .header-nav {
-    opacity: 0.9;
-    background-color: #08509E;
+    top: 0px;
+    z-index: 10;
     width: 100%;
     height: 70px;
-    z-index: 10;
-    top: 0px;
+    opacity: 0.9;
     position: fixed;
+    background-color: #08509E;
 }
 
 .logo {
-    font-family: Sansation;
-    display: inline-block;
     padding: 1% 0 0 3%;
-    text-transform: uppercase;
     letter-spacing: 5px;
+    display: inline-block;
+    font-family: Sansation;
+    text-transform: uppercase;
 }
 .logo img { width: 45px; vertical-align: middle; border-radius: 7px; }
 .logo a:hover { background: initial; color: #ff6000; }
@@ -201,7 +229,7 @@ section > aside::after { content: ""; display: block; clear: both; }
 #sect4 { display: none; }
 #sect5::before { background: transparent url("../images/1600-500/flash9.jpg"); }
 
-main aside { margin: 50px; }
+main aside { margin: 50px 100px; }
 
 .heading { text-align: center; margin-bottom: 50px; }
 .heading h2 {
@@ -217,23 +245,53 @@ main aside { margin: 50px; }
 
 #sect5 > aside article { display: inline-block; }
 
-.contact-form {
-    display: block;
-    float: right;
-    padding: 30px;
-    background-color: #eeeddd;
-    width: 50%;
-    border-radius: 5px;
-    position: relative;
+.visaLinks a { color: #08509E; }
+.visaLinks a:hover, .visaLinks a:active, .visaLinks a:focus { background-color: transparent; }
+
+.visa-form div h2 {
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #088;
+    color: #fff;
+    text-align: center;
 }
+.visa-form { max-width: 80vw; position: relative; margin: auto; display: none; }
+.visa-form form { border-radius: 0 0 5px 5px; }
+.visa-form > form input:not([type=radio]) {
+    width: 20vw;
+    background-color: transparent;
+    border-bottom: 1px dashed #08509E;
+    margin: 15px;
+    padding: 0;
+    color: #fff;
+}
+.visa-form > form input[name^="duration"] { max-width: 5vw; }
+.visa-form > form label { margin-right: 15px; }
+.show { display: block; }
+
+.tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; }
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext { visibility: visible; }
+
+.contact-form { float: right; width: 50%; }
 .contact-form::before {
     content: "";
     float: left;
-    margin-left: -60px;
+    margin-left: -40px;
     margin-top: 75px;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-right: 40px solid #eeeddd;
+    border-right: 40px solid #002c52;
 }
 @keyframes curtainup {
     from { height: 100%; }
@@ -265,24 +323,12 @@ main aside { margin: 50px; }
 .contact-form > form > * { display: block; }
 .contact-form > form > input
 , .contact-form > form > textarea
-, #submit {
-    padding: 15px;
-    border: 0;
-    width: 100%;
-    max-width: 100%;
-    font-family: sansation;
-    letter-spacing: 3px;
-    font-size: 12pt;
-}
+, button { width: 100%; max-width: 100%; }
 #name, #email { display: inline-block; width: initial; }
 #name { width: 40%; }
-#email { width: 59.9%; margin-left: -4px; border-left: 1px dotted #ff6000; }
-#submit {
-    background-color: #08509E;
-    color: #fff;
-    cursor: pointer;
-}
-#submit:hover { background-color: #ff6000; }
+#email { width: 60%; border-left: 1px dotted #ff6000; }
+button { background-color: #08509E; color: #fff; cursor: pointer; }
+button:hover { background-color: #ff6000; }
 
 .totop { position: fixed; bottom: 20px; right: 20px; z-index: 100; display: none; }
 .totop a {
@@ -369,7 +415,6 @@ html[lang="fa"] .contact-form > form > input
 , html[lang="fa"] #submit { font-family: Mitra; font-size: 14pt; letter-spacing: 0; }
 html[lang="fa"] #email {
     margin-left: initial;
-    margin-right: -4px;
     border-left: initial;
     border-right: 1px dotted #ff6000;
 }

@@ -56,21 +56,28 @@ $(document).on('scroll', function() {
     }
 });
 
+$( '#onlineVisaApplication' ).submit(function(e) {
+    e.preventDefault();
+    $.post( '/visa.php', $(this).serialize(), function(response) {
+        $( '#alertmsg' ).html( response );
+        $( '#alertmsg' ).addClass( 'hidealert' );
+        setTimeout(function (){
+            $( '.hidealert' ).removeClass( 'hidealert' );
+            $( '#sendmailform' )[0].reset();
+        }, 7300);
+    });
+});
+
 // AJAX contact from
 $( '#sendmailform' ).submit(function(e) {
     e.preventDefault();
-    // $( '#submit:hover' ).css( 'cursor', 'wait' );
-    // $( '#submit' ).prop( 'disabled', 'true' );
     $.post( "/sendmail.php", $(this).serialize(), function(response) {
-        // $( '#alertmsg' ).css( 'display', 'block' );
         $( '#alertmsg' ).html( response );
         $( '#alertmsg' ).addClass( 'hidealert' );
         setTimeout(function() {
             $( '.hidealert' ).removeClass( 'hidealert' );
             $( '#sendmailform' )[0].reset();
         }, 7300);
-        // $( '#submit:hover' ).css( 'cursor', 'pointer' );
-        // $( '#submit' ).removeAttr( 'disabled' );
     });
 });
 
