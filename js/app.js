@@ -56,6 +56,7 @@ $(document).on('scroll', function() {
     }
 });
 
+// AJAX online visa application form
 $( '#onlineVisaApplication' ).submit(function(e) {
     e.preventDefault();
     $.post( '/visa.php', $(this).serialize(), function(response) {

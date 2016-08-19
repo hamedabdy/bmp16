@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Q&amp;A</title>
+</head>
+<body ng-app="bmpinst">
+
+<div ng-controller="fetchQuestions">
+    <div ng-bind-html="response"></div>
+    <div>
+        <div ng-repeat="r in rows">
+            <span>{{r.name}}</span>
+            <span>{{r.timestamp}}</span>
+            <span>{{r.question}}</span>
+            <span>{{r.answere}}</span>
+            <span>{{r.score}}</span>
+        </div>
+    </div>
+</div>
+
+<div ng-controller="formCtrl">
+    <form novalidate>
+        <input type="text" ng-model="name" placeholder="name">
+        <input type="text" ng-model="question" placeholder="question">
+        <button type="submit" ng-click="postQuestion()">Ask!</button>
+    </form>
+    <div>
+        <p>Preview</p>
+        <p>From : {{ name }}</p>
+        <p>Question : {{ question }}</p>
+    </div>
+    <div ng-bind-html="response"></div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-sanitize.js"></script>
+<script type="text/javascript">
+    var app = angular.module('bmpinst', ['ngSanitize']);
+    app.controller('formCtrl', function($scope, $http){
+        $scope.postQuestion = function (){
+            $http.post('insertQuestion.php', {"name" : $scope.name, "question" : $scope.question})
+            .success(function(data, status, headers, config){
+                // $scope.response = data + '<br/>' + status + '<br/>';
+                if(status == 200) $scope.response = '<p>Question submitted</p>';
+            });
+        };
+    });
+
+    app.controller('fetchQuestions', function($scope, $http) {
+        $http.get('getQuestions.php')
+        .success(function(data, status, headers, config) {
+            // $scope.response = JSON.stringify(data) + '<br/>' + status + '<br/>';
+            $scope.rows = data;
+        });
+    });
+</script>
+</body>
+</html>
