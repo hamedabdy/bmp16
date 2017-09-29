@@ -86,6 +86,51 @@
                 <div class="heading"><h2>Visa Iran<h2></div>
                 <article></article>
             </aside>
+            <div class="visa-form" id="visaForm">
+                <div class="formTitle"><h2>visa applicant biographic details and travel data</h2></div>
+                <div class="alertmsg"><p></p></div>
+                <form action="visa.php" method="POST" id="onlineVisaApplication">
+                    <p><i>Please fill in the form in <b>ENGLISH</b>. Date format: dd/MM/yyyy in Gregorian Calendar</i></p>
+                    <input type="text" name="firstname" placeholder="First name">
+                    <input type="text" name="lastname" placeholder="Last name">
+                    <span>
+                        <label>Gender</label>
+                        <input type="radio" name="gender" value="male"><label>Male</label>
+                        <input type="radio" name="gender" value="female"><label>Female</label>
+                    </span>
+                    <input type="text" name="birthday" placeholder="Date of birth">
+                    <input type="text" name="birthPlace" placeholder="Place of birth">
+                    <input type="text" name="fathersName" placeholder="Father's name"><br>
+                    <span>
+                        <label>Marital status</label>
+                        <input type="radio" name="marital" value="single"><label>Single</label>
+                        <input type="radio" name="marital" value="married"><label>Married</label>
+                    </span>
+                    <input type="text" name="nationality" placeholder="Nationality">
+                    <input type="text" name="formerNationality" placeholder="Former nationality">
+                    <input type="text" name="passportNumber" placeholder="Passport number">
+                    <input type="text" name="issueDate" placeholder="Date of issue">
+                    <input type="text" name="expiryDate" placeholder="Date of expiry">
+                    <input type="text" name="issuePlace" placeholder="Place of issue">
+                    <textarea name="orgNameAddress" placeholder="Organization name &amp; address you work for"></textarea>
+                    <input type="text" name="occupation" placeholder="Occupation">
+                    <input type="text" name="titleRank" placeholder="Title / Rank">
+                    <input type="text" name="tel" placeholder="Tel Number">
+                    <input type="text" name="fax" placeholder="Fax Number">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <textarea name="tripPurpose" placeholder="Purpose of the trip"></textarea>
+                    <span>
+                        <label>Duration of stay in Iran</label>
+                        <input type="number" name="durationDays" placeholder="Days">
+                        <input type="number" name="durationMonths" placeholder="Months">
+                    </span>
+                    <input type="text" name="latTripDate" placeholder="Date of last trip to Iran">
+                    <input type="text" name="plannedArrivalDate" placeholder="Date of planned arrival in Iran">
+                    <input type="text" name="visaPickupLoc" placeholder="Visa Obtaining Location"> <span class="tooltip"><i class="flaticon-chat-2"></i><span class="tooltiptext">Nearest Iranian Consulate to you</span></span>
+                    <textarea name="iranAddress" placeholder="Main address &amp; contact details in Iran"></textarea>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
         </section>
         <section id="sect3" class="">
             <aside>

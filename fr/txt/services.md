@@ -1,3 +1,14 @@
+Nos services et consultations pour les individus et les entités juridiques:
+
+- Demande des différents types de visas
+- Demande et récéption des différents types de visas d'entrés
+- Obtention le visa de séjour et des permissions
+- Renouveller et prolongation de tout types de visa
+- Visas urgent et multiples
+- Possibilité de retirer son visa dans n'importe quel Ambassade/ Consulat d'Iran ou à l'aéroport d'arrivé
+- Pursuit de tout types d'affaires juridiques et consulaire des iraniens et des résidants étrangers
+
+<!-- 
 Actuellement notre chers compatriotes iraniens selon des diverses raisons ont partis aux pays tiers et ils y vivent. l'amour et l'adoration du pays maternelle à causée le fait qu'ils garde leurs relations avec l'Iran en tant qu'un iranien pour qu'ils puissent avoir les avantages de leurs droits dans tous les domaines. Mais plusieurs problèmes leurs est survenues que ceux les plus courants sont comme les suivants:
 
 1. N'ayant suffisamment d'informations concernant le droit et les règles qui est souvent la cause des faux choix.
@@ -23,4 +34,4 @@ Les types d'exemples de services et consultations consulaire et juridique qui so
 8. Les cartes d'identités de R. I. d'Iran à l'étranger
 9. L 'Expropriation des ressortissants étrangers
 10. Les prisonniers iraniens à l'étranger
-11. L'ajustement et confirmation de la procuration des ressortissants iraniens à l'étranger
+11. L'ajustement et confirmation de la procuration des ressortissants iraniens à l'étranger -->

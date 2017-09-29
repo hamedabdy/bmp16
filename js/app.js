@@ -1,9 +1,9 @@
 // Anchor link
 $('a[href^="#"]').on("click",function(){
-    var t= $(this.hash);
-    var t=t.length&&t||$('[id='+this.hash.slice(1)+']');
+    var t = $(this.hash);
+    var t = t.length&&t||$('[id='+this.hash.slice(1)+']');
     if(t.length){
-        var tOffset=t.offset().top;
+        var tOffset = t.offset().top;
         $('html,body').animate({scrollTop:tOffset-20},'slow');
         window.history.replaceState( {}, '', '#'+this.hash.slice(1));
         return false;
@@ -91,4 +91,11 @@ $('.shareBtns').children('a').on('click', function(e){
         h = (jQuery(window).height() - f) / 2,
         i = "status=1,width=" + e + ",height=" + f + ",top=" + h + ",left=" + g;
     window.open($(this).attr("href"), "Le Concert d'a Coté", i);
+});
+
+$(document).ready(function() {
+    // ONLINE FORM onclick
+    $('#online-link').on('click', function(){
+        $('.visa-form').addClass('show');
+    });
 });
