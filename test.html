@@ -1,58 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa">
 <head>
+    <meta charset="UTF-8">
     <title>Angular Q&amp;A</title>
+
+    <style type="text/css">
+        .qa-container{ margin: 50px 100px; }
+        .questions{ display: block; }
+        .questions *{ padding: 15px; }
+        .question-row{ display: table-row; padding: 0; }
+        .question-row span{ display: block; }
+        .questions .score { display: table-cell; background-color: #bbb999; vertical-align: middle; padding: 0; }
+        .questions #score{  }
+        .name-date{ display: table-cell; padding: 0; }
+        .questions #name{ background-color: #ccc; }
+        .questions #timestamp{ background-color: #ddd; }
+        .qa{ display: table-cell; padding: 0; }
+        .questions #question{ background-color: #eee; }
+        .questions #answere{ background-color: #eeeddd; }
+
+        .edit-in-place span {
+          cursor: pointer;
+        }
+
+        .edit-in-place input {
+          display: none;
+        }
+
+        .edit-in-place.active span {
+          display: none;
+        }
+
+        .edit-in-place.active input {
+          display: inline-block;
+        }
+
+    </style>
+
 </head>
 <body ng-app="bmpinst">
 
-<div ng-controller="fetchQuestions">
-    <div ng-bind-html="response"></div>
-    <div>
-        <div ng-repeat="r in rows">
-            <span>{{r.name}}</span>
-            <span>{{r.timestamp}}</span>
-            <span>{{r.question}}</span>
-            <span>{{r.answere}}</span>
-            <span>{{r.score}}</span>
+<div class="qa-container">
+    <div dir="rtl" ng-controller="fetchQuestions">
+        <div ng-bind-html="response"></div>
+        <div class="questions">
+            <div class="question-row" ng-repeat="r in rows" data-question-id="{{r.id}}">
+                <div class="score">
+                    <div id="thumbsup">
+                        <button name="thumbsup" ng-click="thumbsUp()">Thumbs Up</button>
+                    </div>
+                    <span id="score">{{r.score}}</span>
+                </div><!--
+                --><div class="name-date">
+                    <span id="name">{{r.name}}</span>
+                    <span id="timestamp">{{r.timestamp}}</span>
+                </div><!--
+                --><div class="qa">
+                    <span id="question">{{r.question}}</span>
+                    <!-- <span id="answere">{{r.answere}}</span> -->
+                    <edit-in-place value="r.answer"></edit-in-place>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<div ng-controller="formCtrl">
-    <form novalidate>
-        <input type="text" ng-model="name" placeholder="name">
-        <input type="text" ng-model="question" placeholder="question">
-        <button type="submit" ng-click="postQuestion()">Ask!</button>
-    </form>
-    <div>
-        <p>Preview</p>
-        <p>From : {{ name }}</p>
-        <p>Question : {{ question }}</p>
+    <div dir="rtl" ng-controller="formCtrl">
+        <div>
+            <p>پرسش سوال</p>
+            <p>از : {{ name }}</p>
+            <p>سوال : {{ question }}</p>
+        </div>
+        <form name="askQuestion">
+            <input dir="rtl" type="text" ng-model="name" ng-required="true" placeholder="نام">
+            <input dir="rtl" type="text" ng-model="question" ng-required="true" placeholder="سوال">
+            <button dir="rtl" type="submit" ng-click="askQuestion.$valid && postQuestion()">‍پرسش</button>
+        </form>
+        <div ng-bind-html="response"></div>
     </div>
-    <div ng-bind-html="response"></div>
 </div>
 
+<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-sanitize.js"></script>
-<script type="text/javascript">
-    var app = angular.module('bmpinst', ['ngSanitize']);
-    app.controller('formCtrl', function($scope, $http){
-        $scope.postQuestion = function (){
-            $http.post('insertQuestion.php', {"name" : $scope.name, "question" : $scope.question})
-            .success(function(data, status, headers, config){
-                // $scope.response = data + '<br/>' + status + '<br/>';
-                if(status == 200) $scope.response = '<p>Question submitted</p>';
-            });
-        };
-    });
-
-    app.controller('fetchQuestions', function($scope, $http) {
-        $http.get('getQuestions.php')
-        .success(function(data, status, headers, config) {
-            // $scope.response = JSON.stringify(data) + '<br/>' + status + '<br/>';
-            $scope.rows = data;
-        });
-    });
-</script>
+<script src="js/angular-qanda.js"></script>
 </body>
 </html>
