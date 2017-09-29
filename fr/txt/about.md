@@ -1,4 +1,4 @@
-L'Intitut **Bahar Mohajeran Parsi** a été fondé à Téhéran - Iran depuis 2005. Sous le management des experts et des professionnels experimentés vos demandes juridiques - consulaires seront satisfaient.
+L'Institut **Bahar Mohajeran Parsi** a été fondé à Téhéran - Iran depuis 2005. Sous le management des experts et des professionnels experimentés vos demandes juridiques - consulaires seront satisfaient.
 L'institut BMP vous accompagnera dans vos affaires juridiques - consulaires d'une manière rassurante. Cet institut fera en sorte que vous obtiendrez votre Visa dans les plus brefs délais, voyager en Iran en toute sécurité et le plus important en optimisant vos deplacements dans l'obtention de votre Visa.
 <!-- 
 L'Institut BMP en possedant des vastes expériences dans les domaines de services Consulaire dont l'obtention de Visa serait votre assistance de confiance. -->
