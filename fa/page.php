@@ -1,3 +1,4 @@
+
 <!DOCTYPE html lang="fa">
 <html lang="fa">
 <head>
@@ -22,10 +23,10 @@
             <h5 id="site-description">اخذ ویزای ایران</h5>
         </div>
         <ul class="nav-helper">
-            <li><a href="#home">خانه</a></li>
-            <li><a href="#sect1">درباره موسسه</a></li>
-            <li><a href="#sect2">ویزای ایران</a></li>
-            <li><a href="#sect3">خدمات</a></li>
+            <li><a href=".">خانه</a></li>
+            <li><a href="./#sect1">درباره موسسه</a></li>
+            <li><a href="./#sect2">ویزای ایران</a></li>
+            <li><a href="./#sect3">خدمات</a></li>
             <li><a href="#sect5">تماس با ما</a></li>
             <li>
                 <a class="cur-lang">‍‍‍‌‌‌پارسی</a>
@@ -39,65 +40,10 @@
     </nav>
 </header>
 <main>
-<div class="imgSlider">
-        <div class="mySlides animate-right">
-            <img src="/images/slider/01.jpg" alt="Javaher Deh, Iran" />
-            <span class="imgDesc">Javaher Deh, Mazandaran</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/02.jpg" alt="Abiane, Iran" />
-            <span class="imgDesc">Abianeh, Ispahan</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/03.jpg" alt="Masouleh, Gilan" />
-            <span class="imgDesc">Masouleh, Gilan</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/04.jpg" alt="Persepolis, Shiraz" />
-            <span class="imgDesc">Persepolis, Shiraz</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/05.jpg" alt="Kaveh Farrokh, Tabriz" />
-            <span class="imgDesc">Kaveh Farrokh, Tabriz</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/06.jpg" alt="Arg Bam, Kerman" />
-            <span class="imgDesc">Arg Bam, Kerman</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/07.jpg" alt="Arg Bam, Kerman" />
-            <span class="imgDesc">Yardangs - Lut Desert, Kerman</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
-    </div>
     <div class="container">
-        <section id="sect1" class="">
+        <section id="sectx" class="">
             <aside>
-                <div class="heading"><h2>درباره موسسه<h2></div>
-                <article></article>
-            </aside>
-        </section>
-        <section id="sect2" class="">
-            <aside>
-                <div class="heading"><h2>ویزای ایران<h2></div>
-                <article></article>
-            </aside>
-        </section>
-        <section id="sect3" class="">
-            <aside>
-                <div class="heading"><h2>خدمات<h2></div>
-                <article></article>
-            </aside>
-        </section>
-        <section id="sect4" class="">
-            <aside>
-                <div class="heading"><h2>گروه مجرب<h2></div>
+                <div class="heading"><h2><h2></div>
                 <article></article>
             </aside>
         </section>
@@ -120,10 +66,10 @@
 </main>
 <footer>
     <nav id="footer-nav" class="widget">
-        <a href="#home">خانه</a>
-        <a href="#sect1">درباره موسسه</a>
-        <a href="#sect2">ویزای ایران</a>
-        <a href="#sect3">خدمات</a>
+        <a href="./#home">خانه</a>
+        <a href="./#sect1">درباره موسسه</a>
+        <a href="./#sect2">ویزای ایران</a>
+        <a href="./#sect3">خدمات</a>
         <a href="#sect5">تماس با ما</a>
     </nav>
     <nav id="widget2" class="widget">
@@ -146,7 +92,6 @@
     <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!-- Markdown loader -->
     <script src="../js/marked.js"></script>
-    <script src="../js/app.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -155,5 +100,17 @@
       ga('create', 'UA-40498004-7', 'auto');
       ga('send', 'pageview');
     </script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#sectx article').load('txt/' + "<?php echo $_GET['id'] ?>" + '.md', function(data){
+            $(this).html(marked(data));
+        });
+        $('#sect5 article').load('txt/contact.md', function(data){
+        	$(this).html(marked(data));
+    	});
+    });
+</script>
+
 </body>
 </html>

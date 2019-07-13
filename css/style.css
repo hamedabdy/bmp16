@@ -79,7 +79,8 @@ header { padding-top: 69px; position: relative; }
 article { white-space: pre-wrap; font-size: 12pt; font-family: open-sans; text-align: justify; }
 article ul { list-style-type: square; padding-left: 40px; }
 article li, article p { margin-top: -15px; }
-ul {padding: 0; margin: 0; list-style-type: none; }
+ul { padding: 0; margin: 0; list-style-type: none; }
+ol { margin-top: auto; }
 form {
     color: #fff;
     padding: 30px;
@@ -183,9 +184,10 @@ input[type="radio"]:checked { background-color: #ff6000; }
 .header-lang li:nth-child(1) > a::before { background-position: -86px -29px; }
 .header-lang li:nth-child(2) { font-size: .9em; }
 .header-lang li:nth-child(2) > a::before { top: 97px; background-position: -114px -102px; }
+.header-lang li:nth-child(3) > a::before { top: 97px; background-position: -1px -102px; }
 
 .imgSlider { overflow: hidden; }
-.mySlides img { width: 100%; height: calc(100vh - 69px); }
+.mySlides img { width: 100%; height: 70vh; }
 .animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
 @-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 .imgDesc {
@@ -205,6 +207,12 @@ input[type="radio"]:checked { background-color: #ff6000; }
     top: 0;
 }
 
+.container a { color: #08509E; }
+.container a:visited { color: #e04000; background-color: initial; }
+.container a:hover { text-decoration: underline; background-color: initial; }
+.container a:active { background-color: initial; }
+.container a:focus { background-color: initial; }
+div.container { margin: 0 12% 0 12%; }
 main.container { padding: 0; margin: 0; width: 100%; }
 section { padding: 20px 0; position: relative; z-index: 1; }
 section > aside::after { content: ""; display: block; clear: both; }
@@ -233,14 +241,11 @@ main aside { margin: 50px 100px; }
 
 .heading { text-align: center; margin-bottom: 50px; }
 .heading h2 {
-    border: 10px solid #00aaCC;
-    display: inline-block;
-    border-width: 0 30vw;
-    border-radius: 100%;
-    line-height: 5px;
-    padding: 0px 5vw;
-    white-space: nowrap;
+    background-image: linear-gradient(to right, #ff6000, #08509E,rgba(255,0,0,0));
+    padding: 0px 0px 0px 30px;
+    color: #fff;
     font-size: 24pt;
+    text-align: left;
 }
 
 #sect5 > aside article { display: inline-block; }
@@ -284,15 +289,7 @@ main aside { margin: 50px 100px; }
 .tooltip:hover .tooltiptext { visibility: visible; }
 
 .contact-form { float: right; width: 50%; position: relative; }
-.contact-form::before {
-    content: "";
-    float: left;
-    margin-left: -40px;
-    margin-top: 75px;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 40px solid #002c52;
-}
+
 @keyframes curtainup {
     from { height: 100%; }
     to { height: 0; }
@@ -366,7 +363,7 @@ footer { background: #118E94; position: relative; }
     right: 50px;
     background: transparent url('../images/logo/logo-fe.png') no-repeat;
     background-size: 250px;
-    margin: 30px auto 10px auto;
+    margin: 85px auto auto;
     position: relative;
 }
 
@@ -393,7 +390,7 @@ html[lang="fa"] #site-description {
     border-right: 1px solid #ffe;
     padding: 0 10px 0 0;
     font-size: 1.2em;
-}
+    }
 html[lang="fa"] nav { font-size: 14pt; letter-spacing: 0; font-weight: bold; }
 html[lang="fa"] .nav-helper { float: left; margin-left: 3%; margin-right: initial; }
 html[lang="fa"] .cur-lang::before { background-position: -86px -29px; }
@@ -402,14 +399,12 @@ html[lang="fa"] .header-lang { font-size: .6em; }
 html[lang="fa"] .header-lang li::before { left: 70px; right: initial; }
 html[lang="fa"] .header-lang li:nth-child(1) { font-family: inherit; font-size: inherit; }
 html[lang="fa"] .header-lang li:nth-child(1) > a::before { background-position: -29px -127px; }
+html[lang="fa"] .heading h2 { 
+    text-align: right; 
+    background-image: linear-gradient(to left, #ff6000, #08509E,rgba(255,0,0,0));
+    padding: 0px 30px 0px 0px;
+    }
 html[lang="fa"] .contact-form { float: left; }
-html[lang="fa"] .contact-form::before {
-    float: right;
-    margin-right: -60px;
-    margin-left: initial;
-    border-right: 0;
-    border-left: 40px solid #eeeddd;
-}
 html[lang="fa"] .contact-form > form > input
 , html[lang="fa"] .contact-form > form > textarea
 , html[lang="fa"] #submit { font-family: Mitra; font-size: 14pt; letter-spacing: 0; }
@@ -428,6 +423,11 @@ html[lang="fa"] .copyright { direction: ltr; font-size: .8em; }
 /* French language styles */
 html[lang="fr"] .cur-lang::before { background-position: -114px -102px; }
 html[lang="fr"] .header-lang li:nth-child(2) > a::before { background-position: -30px -128px; }
+
+/* Deutsche language styles */
+html[lang="fr"] .cur-lang::before { background-position: -1px -102px; }
+html[lang="fr"] .header-lang li:nth-child(1) > a::before { background-position: -114px -102px; }
+html[lang="fr"] .header-lang li:nth-child(2) > a::before { background-position: -114px -128px; }
 
 @media screen and (max-width: 1024px) {
     .nav-helper { width: 50%; overflow-x: scroll; overflow-y: hidden; }
@@ -453,7 +453,7 @@ html[lang="fr"] .header-lang li:nth-child(2) > a::before { background-position: 
     }
     .cur-lang::before { margin: 7px 0 0 7px; }
     .header-lang { top: 98px; }
-    .mySlides img { height: calc(100vh - 99px); }
+    .mySlides img { height: height: 70vh; }
     main { margin-top: 30px; }
     main aside { margin: 20px; }
     .heading h2 { border-width: 0 20vw; }
