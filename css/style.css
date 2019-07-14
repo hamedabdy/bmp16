@@ -141,11 +141,12 @@ input[type="radio"]:checked { background-color: #ff6000; }
 
 .nav-helper {
     display: inline-block;
-    margin-right: 3%;
     float: right;
     line-height: 60px;
     white-space: nowrap;
     height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .nav-helper li { display: inline-block; }
 .nav-helper a {
@@ -424,7 +425,7 @@ html[lang="fa"] #site-description {
     font-size: 1.2em;
     }
 html[lang="fa"] nav { font-size: 14pt; letter-spacing: 0; }
-html[lang="fa"] .nav-helper { float: left; margin-left: 3%; margin-right: initial; }
+html[lang="fa"] .nav-helper { float: left; }
 html[lang="fa"] .cur-lang::before { background-position: -86px -29px; }
 html[lang="fa"] .cur-lang::before, .header-lang::before { left: 65px; right: initial; }
 html[lang="fa"] .header-lang { font-size: .6em; }
