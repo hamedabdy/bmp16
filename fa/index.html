@@ -23,13 +23,22 @@
         </div>
         <ul class="nav-helper">
             <li><a href="#home">خانه</a></li>
-            <li><a href="#sect1">درباره موسسه</a></li>
-            <li><a href="#sect2">ویزای ایران</a></li>
-            <li><a href="#sect3">خدمات</a></li>
+            <li><a href="#sect1">خدمات</a>
+                <ul class="dropdown-menu services-submenu">
+                    <li><a href="page.php?id=visa">ویزای ایران</a></li>
+                    <li><a href="#">کونسولی</a></li>
+                    <li><a href="#">حقوقی و قضایی</a></li>
+                    <li><a href="#">روادید</a></li>
+                    <li><a href="#">فرهنگ و تاریخ</a></li>
+                </ul>
+            </li>
+            <li><a href="#sect2">مشاوره رایگان</a></li>
+            <li><a href="#sect3">فرهنگ و تاریخ</a></li>
+            <li><a href="#sect4">درباره موسسه</a></li>
             <li><a href="#sect5">تماس با ما</a></li>
             <li>
                 <a class="cur-lang">‍‍‍‌‌‌پارسی</a>
-                <ul class="header-lang">
+                <ul class="dropdown-menu header-lang">
                     <li><a href="/">English</a></li>
                     <li><a href="/fr/">Français</a></li>
                     <li><a href="/de/">Deutsche</a></li>
@@ -40,38 +49,38 @@
 </header>
 <main>
 <div class="imgSlider">
-        <div class="mySlides animate-right">
+       <!--  <div class="mySlides animate-right">
             <img src="/images/slider/01.jpg" alt="Javaher Deh, Iran" />
             <span class="imgDesc">Javaher Deh, Mazandaran</span>
-            <!-- <div class="imgTopLayer"></div> -->
+            <-- <div class="imgTopLayer"></div> ->
         </div>
         <div class="mySlides animate-right">
             <img src="/images/slider/02.jpg" alt="Abiane, Iran" />
             <span class="imgDesc">Abianeh, Ispahan</span>
-            <!-- <div class="imgTopLayer"></div> -->
+            <-- <div class="imgTopLayer"></div> ->
         </div>
         <div class="mySlides animate-right">
             <img src="/images/slider/03.jpg" alt="Masouleh, Gilan" />
             <span class="imgDesc">Masouleh, Gilan</span>
-            <!-- <div class="imgTopLayer"></div> -->
+            <-- <div class="imgTopLayer"></div> ->
         </div>
         <div class="mySlides animate-right">
             <img src="/images/slider/04.jpg" alt="Persepolis, Shiraz" />
             <span class="imgDesc">Persepolis, Shiraz</span>
-            <!-- <div class="imgTopLayer"></div> -->
+            <-- <div class="imgTopLayer"></div> ->
         </div>
         <div class="mySlides animate-right">
             <img src="/images/slider/05.jpg" alt="Kaveh Farrokh, Tabriz" />
             <span class="imgDesc">Kaveh Farrokh, Tabriz</span>
-            <!-- <div class="imgTopLayer"></div> -->
+            <-- <div class="imgTopLayer"></div> ->
         </div>
         <div class="mySlides animate-right">
             <img src="/images/slider/06.jpg" alt="Arg Bam, Kerman" />
             <span class="imgDesc">Arg Bam, Kerman</span>
-            <!-- <div class="imgTopLayer"></div> -->
-        </div>
+            <-- <div class="imgTopLayer"></div> ->
+        </div> -->
         <div class="mySlides animate-right">
-            <img src="/images/slider/07.jpg" alt="Arg Bam, Kerman" />
+            <img src="/images/slider/07.jpg" alt="Yardangs - Lut Desert, Kerman" />
             <span class="imgDesc">Yardangs - Lut Desert, Kerman</span>
             <!-- <div class="imgTopLayer"></div> -->
         </div>
@@ -79,25 +88,25 @@
     <div class="container">
         <section id="sect1" class="">
             <aside>
-                <div class="heading"><h2>درباره موسسه<h2></div>
+                <div class="heading"><h2>خدمات<h2></div>
                 <article></article>
             </aside>
         </section>
         <section id="sect2" class="">
             <aside>
-                <div class="heading"><h2>ویزای ایران<h2></div>
+                <div class="heading"><h2>مشاوره رایگان<h2></div>
                 <article></article>
             </aside>
         </section>
         <section id="sect3" class="">
             <aside>
-                <div class="heading"><h2>خدمات<h2></div>
+                <div class="heading"><h2>فرهنگ و تاریخ<h2></div>
                 <article></article>
             </aside>
         </section>
         <section id="sect4" class="">
             <aside>
-                <div class="heading"><h2>گروه مجرب<h2></div>
+                <div class="heading"><h2>درباره موسسه<h2></div>
                 <article></article>
             </aside>
         </section>
@@ -117,16 +126,27 @@
             </aside>
         </section>
     </div>
+    <div class="totop"><a href="#home"><span class="flaticon-back"></span></a></div>
 </main>
 <footer>
     <nav id="footer-nav" class="widget">
         <a href="#home">خانه</a>
-        <a href="#sect1">درباره موسسه</a>
-        <a href="#sect2">ویزای ایران</a>
         <a href="#sect3">خدمات</a>
+        <a href="#sect2">مشاوره رایگان</a>
+        <a href="#sect3">فرهنگ و تاریخ</a>
+        <a href="#sect1">درباره موسسه</a>
         <a href="#sect5">تماس با ما</a>
     </nav>
-    <nav id="widget2" class="widget">
+    <nav id="" class="widget">
+        <p>خدمات</p>
+        <a href="page.php?id=visa">ویزای ایران</a>
+        <a href="#">کونسولی</a>
+        <a href="#">حقوقی و قضایی</a>
+        <a href="#">روادید</a>
+        <a href="#">فرهنگ و تاریخ</a>
+    </nav>
+    <nav id="widget2" class="widget shareBtns">
+        <p>وبگاه های مرتبط</p>
         <a rel="nofollow" href="http://www.iranair.se/fa" target="_blank">ایران ایر</a>
         <a rel="nofollow" href="http://www.irica.gov.ir/" target="_blank">اداره گمرک</a>
         <a rel="nofollow" href="http://econsulate.mfa.ir/" target="_blank">سامانه کنسولی</a>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html lang="fa">
 <html lang="fa">
 <head>
@@ -30,7 +29,7 @@
             <li><a href="#sect5">تماس با ما</a></li>
             <li>
                 <a class="cur-lang">‍‍‍‌‌‌پارسی</a>
-                <ul class="header-lang">
+                <ul class="dropdown-menu header-lang">
                     <li><a href="/">English</a></li>
                     <li><a href="/fr/">Français</a></li>
                     <li><a href="/de/">Deutsche</a></li>

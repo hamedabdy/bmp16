@@ -4,3 +4,4 @@
 فکس : 88909687 21 (98+)
 تلگرام : bmpinst@ 
 ایمیل : [bmpinst@aol.com](mailto:bmpinst@aol.com)
+واتس اپ :

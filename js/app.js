@@ -28,16 +28,16 @@ function carousel() {
 
 // Load Markdowns from txt/
 $(document).ready(function(){
-    $('#sect1 article').load('txt/about.md', function(data){
+    $('#sect1 article').load('txt/services.md', function(data){
         $(this).html(marked(data));
     });
-    $('#sect2 article').load('txt/visa.md', function(data){
+    $('#sect2 article').load('txt/consult.md', function(data){
         $(this).html(marked(data));
     });
-    $('#sect3 article').load('txt/services.md', function(data){
+    $('#sect3 article').load('txt/farhang.md', function(data){
         $(this).html(marked(data));
     });
-    $('#sect4 article').load('txt/team.md', function(data){
+    $('#sect4 article').load('txt/about.md', function(data){
         $(this).html(marked(data));
     });
     $('#sect5 article').load('txt/contact.md', function(data){
