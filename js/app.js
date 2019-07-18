@@ -4,7 +4,7 @@ $('a[href^="#"]').on("click",function(){
     var t = t.length&&t||$('[id='+this.hash.slice(1)+']');
     if(t.length){
         var tOffset = t.offset().top;
-        $('html,body').animate({scrollTop:tOffset-20},'slow');
+        $('html,body').animate({scrollTop:tOffset-70},'slow');
         window.history.replaceState( {}, '', '#'+this.hash.slice(1));
         return false;
     }
@@ -34,7 +34,7 @@ $(document).ready(function(){
     $('#sect2 article').load('txt/consult.md', function(data){
         $(this).html(marked(data));
     });
-    $('#sect3 article').load('txt/farhang.md', function(data){
+    $('#sect3 article').load('txt/home_hoghughi.md', function(data){
         $(this).html(marked(data));
     });
     $('#sect4 article').load('txt/about.md', function(data){

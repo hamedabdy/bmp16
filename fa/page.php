@@ -18,14 +18,26 @@
     <nav class="header-nav">
         <div class="logo">
             <img src="/images/logo/logo_s_whiteBg.png">
-            <a href="/"><h1 id="site-title">موسسه بهار مهاجران پارسی</h1></a>
-            <h5 id="site-description">اخذ ویزای ایران</h5>
+            <a href="."><h1 id="site-title">موسسه بهار مهاجران پارسی</h1></a>
+            <!-- <h5 id="site-description">اخذ ویزای ایران</h5> -->
         </div>
         <ul class="nav-helper">
-            <li><a href=".">خانه</a></li>
-            <li><a href="./#sect1">درباره موسسه</a></li>
-            <li><a href="./#sect2">ویزای ایران</a></li>
-            <li><a href="./#sect3">خدمات</a></li>
+            <!-- <li><a href="#home">خانه</a></li> -->
+            <li><a href="./#sect1">خدمات</a>
+                <ul class="dropdown-menu services-submenu">
+                    <li><a href="#">کونسولی</a></li>
+                    <li><a href="./#sect3">حقوقی و قضایی</a></li>
+                    <li><a href="page.php?id=visa">روادید</a></li>
+                    <!-- <li><a href="#">فرهنگ و تاریخ</a></li> -->
+                </ul>
+            </li>
+            <li><a href="./#sect2">مشاوره رایگان</a></li>
+            <li><a href="#">فرهنگ و تاریخ</a></li>
+            <li><a href="./#sect4">درباره موسسه</a>
+                <ul class="dropdown-menu">
+                    <li><a href="page.php?id=founders">موسسین</a></li>
+                </ul>
+            </li>
             <li><a href="#sect5">تماس با ما</a></li>
             <li>
                 <a class="cur-lang">‍‍‍‌‌‌پارسی</a>
@@ -64,14 +76,23 @@
     </div>
 </main>
 <footer>
-    <nav id="footer-nav" class="widget">
-        <a href="./#home">خانه</a>
-        <a href="./#sect1">درباره موسسه</a>
-        <a href="./#sect2">ویزای ایران</a>
-        <a href="./#sect3">خدمات</a>
+     <nav id="footer-nav" class="widget">
+        <a href=".">خانه</a>
+        <a href="./#sect1">خدمات</a>
+        <a href="./#sect2">مشاوره رایگان</a>
+        <!-- <a href="#sect3">فرهنگ و تاریخ</a> -->
+        <a href="./#sect4">درباره موسسه</a>
         <a href="#sect5">تماس با ما</a>
     </nav>
-    <nav id="widget2" class="widget">
+    <nav id="" class="widget">
+        <p>خدمات</p>
+        <a href="page.php?id=konsuli_services">کونسولی</a>
+        <a href="./#sect3">حقوقی و قضایی</a>
+        <a href="page.php?id=visa">روادید</a>
+        <a href="#">فرهنگ و تاریخ</a>
+    </nav>
+    <nav id="widget2" class="widget shareBtns">
+        <p>وبگاه های مرتبط</p>
         <a rel="nofollow" href="http://www.iranair.se/fa" target="_blank">ایران ایر</a>
         <a rel="nofollow" href="http://www.irica.gov.ir/" target="_blank">اداره گمرک</a>
         <a rel="nofollow" href="http://econsulate.mfa.ir/" target="_blank">سامانه کنسولی</a>

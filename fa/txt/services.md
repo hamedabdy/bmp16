@@ -1,22 +1,4 @@
-موسسه بهار مهاجران پارسی، با هدف ارایه خدمات و مشاوره در تمام زمینه های حقوقی و کنسولی، توسط تعدادی از افراد متخصص و البته با تجربه تاسیس گردیده و بنا دارد بر اساس نیاز هموطنان عزیز مقیم خارج از کشور و همچنین همکاری متخصصین داخل کشور، اقدام به ارایه خدمات نماید.
-
-### خدمات حقوقی و کنسولی به اشخاص حقیقی و حقوقی ایرانی و خارجی
-1. [وقایع اربعه ولادت، ازدواج، طلاق، فوت](page.php?id=vaghaye_arbaye)
-2. [تنظیم و تایید وکالتنامه](page.php?id=vekalat)
-3. [امور شناسنامه](page.php?id=omor_shenas)
-4. [اخذ گواهی تجرد](page.php?id=tajarod)
-5. [انجام امور گذرنامه و مجوز خروج از کشور](page.php?id=sodor_gozar)
-6. [امور مشمولین و خرید خدمت سربازی ](page.php?id=mashmolin)
-7. [امور دانشجویی](page.php?id=daneshj)
-8. [گواهی عدم سوء پیشینه](page.php?id=soe_pishine)
-9. [امور گواهینامه رانندگی](page.php?id=govahi_ranandegi)
-10. [انحصار وراثت و تقسیم ارث ](page.php?id=enhesar_verasat)
-11. [پیگیری و انجام امور حقوقی در مراجع قضایی و انتظامی و ...](page.php?id=hoghoghi)
-12. [اشتغال اتباع خارجی در شرکتها و موسسات داخل ایران و تامین نیروی انسانی مورد نیاز  ](page.php?id=eshteghal)
-13. [انجام امور تابعیت اتباع ایرانی و خارجی ](page.php?id=tabiyat)
-14. [ورود و خروج و اقامت اتباع خارجی در ایران ( اخذ روادید)](page.php?id=visa)
-15. [استملاک اتباع خارجی در ایران](page.php?id=estemlak)
-16. [پیگیری امور زندانیان ایرانی در خارج از کشور](page.php?id=zendan)
-17. [انجام پروژه های تحقیقاتی و آموزشی مرتبط با اشتغال اتباع خارجی](page.php?id=proje)
-18. [اخذ نمایندگی از موسسات و شرکتهای ایرانی و خارجی در زمینه مهاجرت واعزام و پذیرش دانشجو و نیروی کار ](page.php?id=akz_namayandegi)
-19. [امور ثبت شرکت تجاری و موسسات غیر تجاری در ایران](page.php?id=sabt)
+<div class="services-tiles">
+<div class="service-tile"><a href="page.php?id=konsuli_services"><span class="service-tile-img"><img src="/images/document.png" alt="consular"></span><span class="service-tile-txt">کونسولی</span></a></div><div class="service-tile"><a href="./#sect3"><span class="service-tile-img"><img src="/images/legal.png" alt="legal"></span><span class="service-tile-txt">حقوقی و قضایی</span></a></div><div class="service-tile"><a href="page.php?id=visa"><span class="service-tile-img"><img src="/images/visa.png" alt="visa"></span><span class="service-tile-txt">روادید</span></a></div>
+<!-- <div class="service-tile"><span class="service-tile-img"></span><span class="service-tile-txt"></span></div> -->
+</div>
