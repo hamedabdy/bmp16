@@ -25,7 +25,7 @@
             <!-- <li><a href="#home">خانه</a></li> -->
             <li><a href="./#sect1">خدمات</a>
                 <ul class="dropdown-menu services-submenu">
-                    <li><a href="#">کونسولی</a></li>
+                    <li><a href="#">کنسولی</a></li>
                     <li><a href="./#sect3">حقوقی و قضایی</a></li>
                     <li><a href="page.php?id=visa">روادید</a></li>
                     <!-- <li><a href="#">فرهنگ و تاریخ</a></li> -->
@@ -33,13 +33,13 @@
             </li>
             <li><a href="./#sect2">مشاوره رایگان</a></li>
             <li><a href="#">فرهنگ و تاریخ</a></li>
-            <li><a href="./#sect4">درباره موسسه</a>
+            <li class="parent"><a href="./#sect4">درباره موسسه</a>
                 <ul class="dropdown-menu">
                     <li><a href="page.php?id=founders">موسسین</a></li>
                 </ul>
             </li>
             <li><a href="#sect5">تماس با ما</a></li>
-            <li>
+            <li class="parent">
                 <a class="cur-lang">‍‍‍‌‌‌پارسی</a>
                 <ul class="dropdown-menu header-lang">
                     <li><a href="/">English</a></li>
@@ -86,7 +86,7 @@
     </nav>
     <nav id="" class="widget">
         <p>خدمات</p>
-        <a href="page.php?id=konsuli_services">کونسولی</a>
+        <a href="page.php?id=konsuli_services">کنسولی</a>
         <a href="./#sect3">حقوقی و قضایی</a>
         <a href="page.php?id=visa">روادید</a>
         <a href="#">فرهنگ و تاریخ</a>
@@ -111,7 +111,8 @@
 </footer>
     <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!-- Markdown loader -->
-    <script src="../js/marked.js"></script>
+    <script src="/js/marked.js"></script>
+    <script src="/js/app.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

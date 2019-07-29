@@ -2,8 +2,9 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>موسسه بهار مهاجران پارسی | ویزای ایران</title>
+    <meta name="keywords" content=" موسسه بهار , مهاجران,خدمات حقوقی,روادید,وزارت خارجه,مشاوره کنسولی,مشاوره رایگان,خدمات قضایی,,ویزا,خدمات ویزا,خدمات کنسولی,ویزا ایران ">
     <link rel="stylesheet" href="../css/style.css">
     <meta name="theme-color" content="#08509E" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -12,6 +13,7 @@
     <link rel="icon" href="../images/favicon/favicon192.png" sizes="192x192">
     <link rel="apple-touch-icon-precomposed" href="../images/favicon/favicon180.png">
     <meta name="msapplication-TileImage" content="../images/favicon/favicon270.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body id="home">
 <header>
@@ -25,14 +27,14 @@
             <!-- <li><a href="#home">خانه</a></li> -->
             <li><a href="#sect1">خدمات</a>
                 <ul class="dropdown-menu services-submenu">
-                    <li><a href="page.php?id=konsuli_services">کونسولی</a></li>
-                    <li><a href="#sect3">حقوقی و قضایی</a></li>
+                    <li><a href="page.php?id=konsuli_services">کنسولی</a></li>
+                    <li><a href="page.php?id=home_hoghughi">حقوقی و قضایی</a></li>
                     <li><a href="page.php?id=visa">روادید</a></li>
                     <!-- <li><a href="#">فرهنگ و تاریخ</a></li> -->
                 </ul>
             </li>
             <li><a href="#sect2">مشاوره رایگان</a></li>
-            <li><a href="#">فرهنگ و تاریخ</a></li>
+            <li><a href="#home">فرهنگ و تاریخ</a></li>
             <li><a href="./#sect4">درباره موسسه</a>
                 <ul class="dropdown-menu">
                     <li><a href="page.php?id=founders">موسسین</a></li>
@@ -40,7 +42,7 @@
             </li>
             <li><a href="#sect5">تماس با ما</a></li>
             <li>
-                <a class="cur-lang">‍‍‍‌‌‌پارسی</a>
+                <a class="cur-lang">‍‍‍‌‌‌فارسی</a>
                 <ul class="dropdown-menu header-lang">
                     <li><a href="/">English</a></li>
                     <li><a href="/fr/">Français</a></li>
@@ -51,40 +53,10 @@
     </nav>
 </header>
 <main>
-<div class="imgSlider">
-       <!--  <div class="mySlides animate-right">
-            <img src="/images/slider/01.jpg" alt="Javaher Deh, Iran" />
-            <span class="imgDesc">Javaher Deh, Mazandaran</span>
-            <-- <div class="imgTopLayer"></div> ->
-        </div>
+    <div class="imgSlider">
         <div class="mySlides animate-right">
-            <img src="/images/slider/02.jpg" alt="Abiane, Iran" />
-            <span class="imgDesc">Abianeh, Ispahan</span>
-            <-- <div class="imgTopLayer"></div> ->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/03.jpg" alt="Masouleh, Gilan" />
-            <span class="imgDesc">Masouleh, Gilan</span>
-            <-- <div class="imgTopLayer"></div> ->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/04.jpg" alt="Persepolis, Shiraz" />
-            <span class="imgDesc">Persepolis, Shiraz</span>
-            <-- <div class="imgTopLayer"></div> ->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/05.jpg" alt="Kaveh Farrokh, Tabriz" />
-            <span class="imgDesc">Kaveh Farrokh, Tabriz</span>
-            <-- <div class="imgTopLayer"></div> ->
-        </div>
-        <div class="mySlides animate-right">
-            <img src="/images/slider/06.jpg" alt="Arg Bam, Kerman" />
-            <span class="imgDesc">Arg Bam, Kerman</span>
-            <-- <div class="imgTopLayer"></div> ->
-        </div> -->
-        <div class="mySlides animate-right">
-            <img src="/images/slider/07.jpg" alt="Yardangs - Lut Desert, Kerman" />
-            <span class="imgDesc">Yardangs - Lut Desert, Kerman</span>
+            <img src="/images/slider/bagh-meli.jpg"/>
+            <span class="imgDesc">سر در باغ ملی </span>
             <!-- <div class="imgTopLayer"></div> -->
         </div>
     </div>
@@ -142,8 +114,8 @@
     </nav>
     <nav id="" class="widget">
         <p>خدمات</p>
-        <a href="page.php?id=konsuli_services">کونسولی</a>
-        <a href="#sect3">حقوقی و قضایی</a>
+        <a href="page.php?id=konsuli_services">کنسولی</a>
+        <a href="page.php?id=home_hoghughi">حقوقی و قضایی</a>
         <a href="page.php?id=visa">روادید</a>
         <a href="#">فرهنگ و تاریخ</a>
     </nav>
@@ -176,6 +148,26 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-40498004-7', 'auto');
       ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#sect1 article').load('txt/services.md', function(data){
+                $(this).html(marked(data));
+            });
+            $('#sect2 article').load('txt/consult.md', function(data){
+                $(this).html(marked(data));
+            });
+            $('#sect3 article').load('txt/home_hoghughi.md', function(data){
+                $(this).html(marked(data));
+            });
+            $('#sect4 article').load('txt/about.md', function(data){
+                $(this).html(marked(data));
+            });
+            $('#sect5 article').load('txt/contact.md', function(data){
+                $(this).html(marked(data));
+            });
+        }); 
     </script>
 </body>
 </html>

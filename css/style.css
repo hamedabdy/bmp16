@@ -153,13 +153,26 @@ input[type="radio"]:checked { background-color: #ff6000; }
     overflow-x: auto;
     overflow-y: hidden;
 }
-.nav-helper li { display: inline-block; }
+.nav-helper li { display: inline-block; position: static; }
 .nav-helper a {
     display: block;
     float: left;
     text-align: center;
     padding: 5px 30px 5px 30px;
 }
+
+.nav-helper li:hover > ul { display: block; position: absolute; }
+
+.dropdown-menu {
+    background-color: #08509E;
+    top: 70px;
+    position: relative;
+    display: none;
+    font-family: sans-serif;
+    z-index: 10;
+}
+.dropdown-menu li { display: block; }
+.dropdown-menu li a { float: none; }
 
 .cur-lang::before, .header-lang li > a::before {
     content: "";
@@ -174,21 +187,7 @@ input[type="radio"]:checked { background-color: #ff6000; }
     display: inline-block;
 }
 
-.nav-helper li:hover > ul { display: block; }
 
-.dropdown-menu {
-    background-color: #08509E;
-    top: 70px;
-    position: absolute;
-    display: none;
-    font-family: sans-serif;
-}
-.dropdown-menu li { display: block; }
-.dropdown-menu li a { float: none; }
-
-.services-submenu { font-family: Badr; letter-spacing: 0; }
-
-.header-lang li:nth-child(1) { font-family: Badr; font-size: 1.4em; letter-spacing: 0; }
 .header-lang li:nth-child(1) > a::before { background-position: -86px -29px; }
 .header-lang li:nth-child(2) { font-size: .9em; }
 .header-lang li:nth-child(2) > a::before { top: 97px; background-position: -114px -102px; }
@@ -216,8 +215,8 @@ input[type="radio"]:checked { background-color: #ff6000; }
 }
 
 .middle-ribbon {
-    height: 20vh;
-    background: lightgray;
+    height: 170px;
+    background: bisque;
     text-align: center;
 }
 /* Pseudo element to middle vertical align */
@@ -260,7 +259,7 @@ main.container { padding: 0; margin: 0; width: 100%; }
 section { padding: 20px 0; position: relative; z-index: 1; padding-top: 0; }
 section > aside::after { content: ""; display: block; clear: both; }
 
-#sect1 article
+html[lang="fa"] #sect1 article
 , .services-tiles div { text-align: center; }
 .services-tiles div { display: inline-block; }
 .service-tile {
@@ -459,7 +458,8 @@ html[lang="fa"] #site-description {
     padding: 0 10px 0 0;
     font-size: 1.2em;
     }
-html[lang="fa"] nav { font-size: 14pt; letter-spacing: 0; }
+html[lang="fa"] nav
+, html[lang="fa"] .services-submenu { font-family: Badr; font-size: 14pt; letter-spacing: 0; }
 html[lang="fa"] .nav-helper { float: left; }
 html[lang="fa"] .cur-lang::before { background-position: -86px -29px; }
 html[lang="fa"] .cur-lang::before, .header-lang::before { left: 65px; right: initial; }
@@ -513,6 +513,12 @@ html[lang="de"] .header-lang li:nth-child(3) > a::before { background-position: 
     .logo img { width: 35px; }
     #site-title { font-size: 12pt; letter-spacing: 2px; }
     #site-description { font-size: 8pt; }
+    
+    div.container { margin : 0; }
+
+    .heading { margin-left: 20px; width: 100vw; }
+    html[lang="fa"] .heading { margin-right: -20px; }
+
     .nav-helper {
         float: initial;
         width: 94%;
@@ -521,8 +527,9 @@ html[lang="de"] .header-lang li:nth-child(3) > a::before { background-position: 
         font-size: 9pt;
         height: 44%;
     }
+    .dropdown-menu { top: 99px; }
     .cur-lang::before { margin: 7px 0 0 7px; }
-    .header-lang { top: 98px; }
+    .header-lang li > a::before { margin: 7px 0 0 7px; }
     .mySlides img { height: height: 70vh; }
     main { margin-top: 30px; }
     main aside { margin: 20px; }

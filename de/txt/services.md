@@ -1,10 +1,12 @@
-Einreise und Ausreise sowie Aufenthaltserlaubnis von Ausländern (Erteilung von Visa und Verlängerung der Aufenthaltserlaubnis)
+ï»¿Einreise und Ausreise sowie Aufenthaltserlaubnis von AuslÃ¤ndern (Erteilung von Visa und VerlÃ¤ngerung der Aufenthaltserlaubnis)
+
 Erteilung:
 1- Touristenvisum
-2. Geschäftsvisum
-3. Arbeitsvisum
-4- Visum für Gesundheitstourismus
-5. Visum für ausländische StudentInnen
-6.  Visum für ausländische IslamschülerInnen
-7. Erteilung der Arbeitserlaubnis
-Wir bitten alle Landsleute im Ausland und die Ausländer bei den Ministerien, Unternehmen und  Behörden sowie private und alle Bürger aus Großbritannien, Amerika und Kanada, sich zunächst auf unserer Webseite zu registrieren und ihre Anfrage durch Auswahl einer folgenden Optionen direkt an unser Institut anzutragen. Selbstverständlich prüfen unsere KollegInnen Ihre Wünsche so schnell wie möglich und werden bald die erforderlichen Unterlagen und Formulare sowie die entsprechende Vollmacht vorlegen
+2- GeschÃ¤ftsvisum
+3- Arbeitsvisum
+4- Visum fÃ¼r Gesundheitstourismus
+5- Visum fÃ¼r auslÃ¤ndische StudentInnen
+6- Visum fÃ¼r auslÃ¤ndische IslamschÃ¼lerInnen
+7- Erteilung der Arbeitserlaubnis
+
+Wir bitten alle Landsleute im Ausland und die AuslÃ¤nder bei den Ministerien, Unternehmen und BehÃ¶rden sowie private und alle BÃ¼rger aus GroÃŸbritannien, Amerika und Kanada, sich zunÃ¤chst auf unserer Webseite zu registrieren und ihre Anfrage durch Auswahl einer folgenden Optionen direkt an unser Institut anzutragen. SelbstverstÃ¤ndlich prÃ¼fen unsere KollegInnen Ihre WÃ¼nsche so schnell wie mÃ¶glich und werden bald die erforderlichen Unterlagen und Formulare sowie die entsprechende Vollmacht vorlegen

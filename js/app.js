@@ -10,9 +10,26 @@ $('a[href^="#"]').on("click",function(){
     }
 });
 
+// Header menu
+$(document).ready(function() {
+  // whenever we hover over a menu item that has a submenu
+  $('li.parent').on('mouseover', function() {
+    var $menuItem = $(this),
+        $submenuWrapper = $('> .dropdown-menu', $menuItem);
+    
+    // grab the menu item's position relative to its positioned parent
+    var menuItemPos = $menuItem.position();
+    
+    // place the submenu in the correct position relevant to the menu item
+    $submenuWrapper.css({
+      left: menuItemPos.left
+    });
+  });
+});
+
 // Image Slider
 var myIndex = 0;
-carousel();
+//carousel();
 
 function carousel() {
     var i;
@@ -28,16 +45,16 @@ function carousel() {
 
 // Load Markdowns from txt/
 $(document).ready(function(){
-    $('#sect1 article').load('txt/services.md', function(data){
+    $('#sect1 article').load('txt/about.md', function(data){
         $(this).html(marked(data));
     });
-    $('#sect2 article').load('txt/consult.md', function(data){
+    $('#sect2 article').load('txt/visa.md', function(data){
         $(this).html(marked(data));
     });
-    $('#sect3 article').load('txt/home_hoghughi.md', function(data){
+    $('#sect3 article').load('txt/services.md', function(data){
         $(this).html(marked(data));
     });
-    $('#sect4 article').load('txt/about.md', function(data){
+    $('#sect4 article').load('txt/team.md', function(data){
         $(this).html(marked(data));
     });
     $('#sect5 article').load('txt/contact.md', function(data){
