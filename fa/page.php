@@ -107,7 +107,7 @@
     </nav>
     <div class="foot-logo">
     </div>
-    <div class="copyright">Copyright 2019 BMP Institute. All rights reserved.</div>
+    <div class="copyright">حق نشر برای موسسه بهار مهاجران پارسی محفوظ است.</div>
 </footer>
     <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!-- Markdown loader -->

@@ -45,21 +45,23 @@ function carousel() {
 
 // Load Markdowns from txt/
 $(document).ready(function(){
-    $('#sect1 article').load('txt/about.md', function(data){
-        $(this).html(marked(data));
-    });
-    $('#sect2 article').load('txt/visa.md', function(data){
-        $(this).html(marked(data));
-    });
-    $('#sect3 article').load('txt/services.md', function(data){
-        $(this).html(marked(data));
-    });
-    $('#sect4 article').load('txt/team.md', function(data){
-        $(this).html(marked(data));
-    });
-    $('#sect5 article').load('txt/contact.md', function(data){
-        $(this).html(marked(data));
-    });
+    if( document.documentElement.lang != 'fa' ) {
+        $('#sect1 article').load('txt/about.md', function(data){
+            $(this).html(marked(data));
+        });
+        $('#sect2 article').load('txt/visa.md', function(data){
+            $(this).html(marked(data));
+        });
+        $('#sect3 article').load('txt/services.md', function(data){
+            $(this).html(marked(data));
+        });
+        $('#sect4 article').load('txt/team.md', function(data){
+            $(this).html(marked(data));
+        });
+        $('#sect5 article').load('txt/contact.md', function(data){
+            $(this).html(marked(data));
+        });
+    }
 });
 
 // Display to top button upon scroll

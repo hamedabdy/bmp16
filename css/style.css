@@ -114,6 +114,23 @@ input[type=radio] {
 }
 input[type="radio"]:checked { background-color: #ff6000; }
 
+article table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
 .header-nav {
     top: 0px;
     z-index: 10;
@@ -125,7 +142,7 @@ input[type="radio"]:checked { background-color: #ff6000; }
 }
 
 .logo {
-    padding: 1% 0 0 3%;
+    padding: 13px 0 0 3%;
     letter-spacing: 5px;
     display: inline-block;
     font-family: Sansation;
@@ -214,25 +231,18 @@ input[type="radio"]:checked { background-color: #ff6000; }
     top: 0;
 }
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
 .middle-ribbon {
-    height: 170px;
     background: bisque;
     text-align: center;
 }
-/* Pseudo element to middle vertical align */
-.middle-ribbon::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
 
 .tiles {
-    height: 15vh;
     display: inline-block;
     width: 300px;
     padding: 15px;
-    vertical-align: middle;
 }
 
 .tiles span {
@@ -402,10 +412,9 @@ footer { background: #118E94; position: relative; }
 
 .widget {
     position: relative;
-    padding: 50px 0 0 50px;
+    padding: 20px 0 20px 20px;
     display: inline-block;
-    box-shadow: 20px 15px 30px #088;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .widget a { display: block; padding: 8px 100px 8px 20px; }
 .widget p { margin-bottom: 15px; }
@@ -445,10 +454,22 @@ footer { background: #118E94; position: relative; }
 .table-image img { width: 100%; height: 100% }
 .table-text { width: 80%; padding: 20px; }
 
+/* farhang.md */
+.bg-gradient { background-image: linear-gradient(to left, #dff0f0,rgba(255,0,0,0)); }
+.bg-gradient-reverse { background-image: linear-gradient(to right, #dff0f0,rgba(255,0,0,0)); }
+html[lang="fa"] article .promo-row { margin: 10px; }
+html[lang="fa"] article .promo-row > span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 30px 0px 20px;
+}
+html[lang="fa"] article .promo-row > .image { width: 300px; }
+html[lang="fa"] article .promo-row > .text { width: 60%; }
 
 /* Persian language styles */
 html[lang="fa"] body { font-family: Mitra; direction: rtl; font-size: 12pt; }
 html[lang="fa"] article { font-family: Mitra; font-size: 16pt; }
+html[lang="fa"] th, html[lang="fa"] td { text-align: right; }
 html[lang="fa"] .logo { letter-spacing: 0; padding: 10px 3% 0 0; font-family: Hamid; }
 html[lang="fa"] .logo::before { margin-top: -6px; }
 html[lang="fa"] #site-title { font-size: 25pt; }
@@ -487,7 +508,7 @@ html[lang="fa"] .widget a { padding: 8px 20px 8px 100px; line-height: 20px; }
 html[lang="fa"] #widget3 p { font-size: 12pt; letter-spacing: 0; }
 html[lang="fa"] #widget3 a { direction: ltr; font: 600 10pt lato; letter-spacing: 2px; }
 html[lang="fa"] .foot-logo { float: left; right: initial; left: 50px; }
-html[lang="fa"] .copyright { direction: ltr; font-size: .8em; }
+html[lang="fa"] .copyright {}
 
 /* French language styles */
 html[lang="fr"] .cur-lang::before { background-position: -114px -102px; }
