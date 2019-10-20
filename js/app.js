@@ -10,22 +10,22 @@ $('a[href^="#"]').on("click",function(){
     }
 });
 
-// Header menu
-$(document).ready(function() {
-  // whenever we hover over a menu item that has a submenu
-  $('li.parent').on('mouseover', function() {
-    var $menuItem = $(this),
-        $submenuWrapper = $('> .dropdown-menu', $menuItem);
+// // Header menu
+// $(document).ready(function() {
+//   // whenever we hover over a menu item that has a submenu
+//   $('li.parent').on('mouseover', function() {
+//     var $menuItem = $(this),
+//         $submenuWrapper = $('> .dropdown-menu', $menuItem);
     
-    // grab the menu item's position relative to its positioned parent
-    var menuItemPos = $menuItem.position();
+//     // grab the menu item's position relative to its positioned parent
+//     var menuItemPos = $menuItem.position();
     
-    // place the submenu in the correct position relevant to the menu item
-    $submenuWrapper.css({
-      left: menuItemPos.left
-    });
-  });
-});
+//     // place the submenu in the correct position relevant to the menu item
+//     $submenuWrapper.css({
+//       left: menuItemPos.left
+//     });
+//   });
+// });
 
 // Image Slider
 var myIndex = 0;
@@ -109,12 +109,5 @@ $('.shareBtns').children('a').on('click', function(e){
         g = (jQuery(window).width() - e) / 2,
         h = (jQuery(window).height() - f) / 2,
         i = "status=1,width=" + e + ",height=" + f + ",top=" + h + ",left=" + g;
-    window.open($(this).attr("href"), "Le Concert d'a Coté", i);
-});
-
-$(document).ready(function() {
-    // ONLINE FORM onclick
-    $('#online-link').on('click', function(){
-        $('.visa-form').addClass('show');
-    });
+    window.open($(this).attr("href"), "The BMP Institute", i);
 });

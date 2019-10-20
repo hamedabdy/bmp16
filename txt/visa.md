@@ -9,7 +9,7 @@ Having a visa prior to your arrival in Iran is by far the safest way to avoid an
 
 After a visa application submission through our services, you will be delivered a visa authorization number in the shortest time. Upon your submission an authorization number request is made. During submission you will be asked to provide the following information and documents:
 
-- Personal details and your planned itinerary (forms: <span class="visaLinks"><a href="/files/VISA%20FORM.pdf">PDF</a>, <a href="/files/VISA-LIGHT.xlsx">XLSX</a>, <a id="online-link" href="#visaForm">ONLINE</a></span>)
+- Personal details and your planned itinerary (Visa application forms: <span class="visaLinks"><a href="/files/VISA%20FORM.pdf">PDF</a>, <a href="/files/VISA-LIGHT.xlsx">XLSX</a></span>)
 - A scanned copy of your passport identification page(s)
 
 Unless urgent option is specified, visa authorization could take up to 5 working days. Please do note that you must also specify visa pickup location between Iranian Embassies/ Consulates or the arrival airports.
@@ -25,20 +25,17 @@ Accompanied with the visa authorization number you will receive our guidance and
 
 The Embassy/ Consulate can issue your visa from few hours up to 2 (two) weeks, depending on the location and the amount of work of the Embassy/ Consulate. In case of an emergency please do specify upon submission to benefit from the urgent option.
 
+<button onclick="showVisaForm( $('#visaForm') );">Submit your Visa application now</button>
+
 <script type="text/javascript">
     // ONLINE FORM onclick
-    $('#online-link').on('click', function(){
+    function showVisaForm( t ){
         $('.visa-form').addClass('show');
-    });
-    // Anchor link
-    $('a[href^="#"]').on("click",function(){
-        var t= $(this.hash);
-        var t=t.length&&t||$('[id='+this.hash.slice(1)+']');
         if(t.length){
             var tOffset=t.offset().top;
             $('html,body').animate({scrollTop:tOffset-70},'slow');
-            window.history.replaceState( {}, '', '#'+this.hash.slice(1));
+            window.history.replaceState( {}, '', t.selector );
             return false;
-        }
-    });
+        };
+    };
 </script>
