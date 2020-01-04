@@ -178,7 +178,7 @@ th {
     padding: 5px 30px 5px 30px;
 }
 
-.nav-helper li:hover > ul { display: block; position: absolute; }
+.nav-helper li:active > ul, .nav-helper li:hover > ul { display: block; position: absolute; right: 0; }
 
 .dropdown-menu {
     background-color: #08509E;
@@ -206,7 +206,7 @@ th {
 
 
 .header-lang li:nth-child(1) > a::before { background-position: -86px -29px; }
-.header-lang li:nth-child(2) { font-size: .9em; }
+.header-lang li:nth-child(2), .header-lang li:nth-child(3) { font-size: .9em; }
 .header-lang li:nth-child(2) > a::before { top: 97px; background-position: -114px -102px; }
 .header-lang li:nth-child(3) > a::before { top: 97px; background-position: -1px -102px; }
 
@@ -482,6 +482,7 @@ html[lang="fa"] #site-description {
 html[lang="fa"] nav
 , html[lang="fa"] .services-submenu { font-family: Badr; font-size: 14pt; letter-spacing: 0; }
 html[lang="fa"] .nav-helper { float: left; }
+html[lang="fa"] .nav-helper li:active > ul, .nav-helper li:hover > ul { right: initial; }
 html[lang="fa"] .cur-lang::before { background-position: -86px -29px; }
 html[lang="fa"] .cur-lang::before, .header-lang::before { left: 65px; right: initial; }
 html[lang="fa"] .header-lang { font-size: .6em; }
@@ -503,7 +504,7 @@ html[lang="fa"] #email {
     border-left: initial;
     border-right: 1px dotted #ff6000;
 }
-html[lang="fa"] .widget { box-shadow: -20px 15px 30px #088; padding: 40px 30px 0 0; }
+html[lang="fa"] .widget { padding: 20px 20px 20px 0; }
 html[lang="fa"] .widget a { padding: 8px 20px 8px 100px; line-height: 20px; }
 html[lang="fa"] #widget3 p { font-size: 12pt; letter-spacing: 0; }
 html[lang="fa"] #widget3 a { direction: ltr; font: 600 10pt lato; letter-spacing: 2px; }
